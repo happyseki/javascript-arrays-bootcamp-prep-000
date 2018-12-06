@@ -37,6 +37,7 @@ function removeElementFromBeginningOfArray(array){
   return array.slice(1);
 }
 
+<<<<<<< HEAD
 function destructivelyRemoveElementFromEndOfArray(array){
  array.pop();
 return array;
@@ -45,5 +46,22 @@ return array;
 
 function removeElementFromEndOfArray(array){
 
+=======
+function destructivelyRemoveElementFromEndOfArray(){
+ const num = [1,2,3];
+num.length = 2;
+ return num;
+}
+
+function destructivelyRemoveElementFromEndOfArray(){
+ const num = [1,2,3];
+num.pop();
+ return num;
+}
+
+
+function removeElementFromEndOfArray(){
+  const array = [1,2,3];
+>>>>>>> ad11815d9cd8a752f6fdccd758f4d74480d41318
   return array.slice(0, array.length-1);
 }
